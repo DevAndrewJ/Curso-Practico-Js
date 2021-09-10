@@ -44,8 +44,8 @@ function diametroCirculo(radio){
     return radio * 2;
 }
 
-function perimetroCirculo(radio){
+function areaCirculo(radio){
 
 
-    retun (radio * radio)*Math.PI;
+    return (radio * radio)*Math.PI;
 }
