@@ -9,7 +9,6 @@ function perimetroCuadrado(lado){
 
 perimetroCuadrado();
 
-// console.log ("Los perimetros del cuadrado son: " + perimetroCuadrado + "cm");
 
 function areaCuadrado(lado){
 
@@ -48,4 +47,23 @@ function areaCirculo(radio){
 
 
     return (radio * radio)*Math.PI;
+}
+
+
+
+function calcPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcAreaCuadrado(){
+
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
 }
