@@ -2,38 +2,23 @@
 
 function perimetroCuadrado(lado){
 
-
  return lado * 4;
-
 }
-
-perimetroCuadrado();
 
 
 function areaCuadrado(lado){
-
-
     return lado * lado;
 } 
 
-areaCuadrado();
-
-function perimetroTriangulo(lado1,lado2,lado3,base){
-
-    return lado1 + lado2 + base;
-}
-
 // Codigo triangulo
-perimetroTriangulo();
+function perimetroTriangulo(lado1,lado2,base){
+    perimetro = lado1 + lado2 + base;
+    return perimetro;
+}
 
 function areaTriangulo(base,altura){
-
     return (base * altura)/2;
 }
-
-areaTriangulo();
-
-
 
 //Codigo circulo
 
@@ -67,3 +52,23 @@ function calcAreaCuadrado(){
     const area = areaCuadrado(value);
     alert(area);
 }
+
+
+function calcPerimetroTriangulo(){
+     
+    const inputLado1 = document.getElementById("lado1");
+    const inputLado2 = document.getElementById("lado2");
+    const inputBase = document.getElementById("base");
+
+    const lado1 = Number(inputLado1.value); 
+    const lado2 = Number (inputLado2.value);
+    const base  = Number (inputBase.value);
+
+    const perimetroTri = perimetroTriangulo(lado1,lado2,base);
+    console.log(perimetroTri);
+}
+
+
+perimetroCuadrado();
+areaCuadrado();
+perimetroTriangulo();
